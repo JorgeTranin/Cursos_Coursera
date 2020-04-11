@@ -35,6 +35,10 @@ def campeonato():
 def partida():
     n = int(input('Quantas peças? '))
     m = int(input('Limite de peças por jogada? '))
+    while n < m:    
+        print('As peças tem que conter um valor maior que as jogadas. Tente de novo!')
+        n = int(input('Quantas peças? '))
+        m = int(input('Limite de peças por jogada? '))
     print()
     usuario = False
     if n % (m+1) == 0:
