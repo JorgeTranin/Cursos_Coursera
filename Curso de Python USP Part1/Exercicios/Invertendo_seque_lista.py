@@ -10,6 +10,7 @@ while True:
     if n == 0:
         break
     lista.append(n)
-    
+
 lista.reverse()
-print(lista)
+for elemento in lista:
+    print(elemento)
