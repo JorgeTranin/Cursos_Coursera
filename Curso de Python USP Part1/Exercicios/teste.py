@@ -15,7 +15,9 @@ def separa_palavras(frase):
     return frase.split()
 
 senten = separa_sentencas('A funcao recebe uma frase e devolve uma lista das palavras dentro da frase')
-frase = separa_frases(senten)
+frase = []
+for item in senten:
+    frase = separa_frases(senten)
 
 print(senten)
 print(frase)
